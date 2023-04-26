@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
   html, body {
     font-family: Verdana, Arial, sans-serif;
     line-height: 1.5;
@@ -10,7 +5,7 @@
   
   body {
     background-color: #F28095;
-    margin: 0;
+    margin: 0 auto;
   }
   
   header, footer {
@@ -18,28 +13,22 @@
     margin: 0 auto;
   }
   
+  
   header {
+    width: 1000px;
     height: 150px;
     background-color: #141a1a;
-    background-image: url(images/bowl.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
     color: white;
-    justify-content: center;
-  }
-  
-  header img {
-    display: flex;
-    justify-self: end;
+    background-image: url("https://raw.githubusercontent.com/jross566/m6-asurite-amelie-boulangerie/main/images/bowl.jpg");
+    background-repeat: no-repeat;
+    background-size: normal;
+    background-position: right;
   }
 
   header h1 {
-    margin: 0;
+    margin: 0 auto;
     padding-left: 32px;
-    align-self: flex-start;
-    position: absolute;
-    justify-self: center;
+    float: left;
   }
 
   #grid-container {
@@ -52,21 +41,22 @@
   }
 
   h1 {
-    padding-top:50px;
+    padding-top: 50px;
+    padding-left: 32px;
+    margin: 0 auto;
   }
-
-  h2 { 
-    padding-top: 20px;
-    padding-bottom: 20px;
- }
   
   nav {
-    width: 120px;
-    margin-top: 30px;
-    margin-left: 40px;
+    width: 150px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
   }
-  
-  /* Set styles for list items in nav */
+
+  nav li:first-child a {
+    background-color: #F28095;
+  }
+
   nav ul {
     list-style: none;
     text-align: center;
@@ -74,9 +64,9 @@
   
   nav li {
     text-align: center;
+    background-color: #afaeb4;
   }
   
-  /* Set styles for links in nav */
   nav a {
     display: block;
     padding: 16px;
@@ -86,58 +76,44 @@
     text-decoration: none;
     font-weight: bold;
   }
-  
-  nav a:first-child,
+
   nav a:hover {
     background-color: #f28095;
   }
-  
-  /* Set styles for main */
+
   main {
     color: #542c1b;
     padding-bottom: 16px;
-    justify-self: flex-start;
   }
   
-  /* Set styles for image in main */
   main img {
     float: left;
-    padding-left: 10px;
   }
   
-  /* Set styles for paragraph and unordered list in main */
   main p,
   main ul {
     display: inline-block;
-    width: 50%;
+    width: 58%;
   }
   
-  /* Set styles for paragraph in main */
   main p {
     margin-left: 32px;
   }
-  
-  /* Set styles for unordered list in main */
+
   main ul {
-    margin-left: 16px;
+    margin-top: 40px;
+    margin-left: 20px;
   }
-  
-  /* Set styles for address */
+
   address {
     clear: both;
     padding-top: 16px;
-    padding-left: 10px;
   }
   
-  /* Set styles for footer */
   footer {
     font-style: italic;
     text-align: center;
     background-color: #afaeb4;
     padding: 8px 0;
-    justify-content: center;
-}
-
-footer p {
-    padding-top: 10px;
-}
+    height: 45px;
+  }
